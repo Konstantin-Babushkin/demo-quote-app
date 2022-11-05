@@ -1,6 +1,8 @@
 body{
     font-family:Georgia, 'Times New Roman', Times, serif;
     background: linear-gradient(#ffc965, #9ca3ee);
+    margin: 0;
+    padding: 0
 }
 
 #mainContainer{
@@ -15,7 +17,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 60%;
+    max-width: 400px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 0.4rem;
@@ -29,33 +31,20 @@ body{
     text-align: center;
     position: fixed;
     left: 0;
-    bottom: 0;
+    bottom: 1rem;
     width: 100%;
-}
-
-
-/* Styling title */
-#title-container{
-    position: fixed;
-    top: 0;
-    color: black;
-    text-align: center;
-    text-shadow: 2px 1px 2px white;;
-}
-
-#title-container h1{
-    margin-bottom: -.5rem;
 }
 
 /* Styling inside quote-box */
 #text{
     text-align: justify;
-    font-size: 1.5rem
+    font-size: 1.5rem;
 }
 
 #source{
     text-align: end;
-    font-size: 1rem
+    font-size: 1rem;
+    font-style: italic;
 }
 
 #btn-container{
@@ -87,4 +76,54 @@ body{
 #tweet-quote img{
     width: 24px;
     margin-top: 3px
+}
+
+@media only screen and (max-width: 600px){ 
+    #quote-box {
+        max-width: 100%;
+        min-height: 35%;
+        border-radius: 0%;
+    }
+
+    #text{
+        font-size: 1.6rem
+    }
+    
+    #source{
+        font-size: 1.2rem
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #quote-box {
+        max-width:900px;
+        overflow: scroll;
+    }
+
+    #text{
+        font-size: 3.5rem
+    }
+    
+    #source{
+        font-size: 2.3rem
+    }
+
+    .btn{
+        width: 9rem;
+        height: 5rem;
+        font-size: 2.8rem;
+    }
+
+    #share{
+        width: 5rem
+    }
+
+    #tweet-quote img{
+        width: 48px;
+        margin-top: 5px
+    }
+
+    #credits{
+        font-size: 2rem;
+    }
 }

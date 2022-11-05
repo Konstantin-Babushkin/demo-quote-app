@@ -16,11 +16,6 @@ function App(props) {
 
   return (
     <div id="mainContainer">
-      <div id="title-container">
-        <h1>Э.Х. Галшиев - Бэлигэй Толи</h1>
-        <h2>E.H. Galshiev - The Book of Wisdom</h2>
-      </div>
-
       <div id="quote-box">
         <p id="text">{quote.quoteText}</p>
         <small id="source">{quote.source}</small>
