@@ -96,13 +96,13 @@ body{
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1600px) {
     #quote-box {
         max-width:800px;
     }
 
     #text{
-        font-size: 3rem
+        font-size: 2.7rem
     }
     
     #source{
